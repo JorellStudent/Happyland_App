@@ -52,9 +52,7 @@ android {
 dependencies {
     // Core Android libraries
     
-        implementation("androidx.camera:camera-camera2:1.2.0") // O la última versión disponible
-        implementation("androidx.camera:camera-lifecycle:1.2.0")
-        implementation("androidx.camera:camera-view:1.2.0-alpha20") // Solo si lo necesitas
+
 
 
     implementation("androidx.core:core-ktx:1.13.1")

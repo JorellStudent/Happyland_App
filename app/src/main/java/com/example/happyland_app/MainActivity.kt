@@ -56,7 +56,7 @@ fun LoginScreen() {
 
             // Texto "Welcome Back"
             Text(
-                text = "Welcome Back",
+                text = "Bienvenido a la HappyApp",
                 style = MaterialTheme.typography.titleLarge,
                 color = Color(0xFFFF5722) // Color naranja
             )
@@ -69,7 +69,7 @@ fun LoginScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             // Campo de Password
-            InputField(iconId = R.drawable.password, hint = "Password", isPassword = true)
+            InputField(iconId = R.drawable.password, hint = "Contraseña", isPassword = true)
 
             Spacer(modifier = Modifier.height(32.dp))
 
@@ -323,7 +323,7 @@ fun HeaderSection() {
     ) {
         Column {
             Text(
-                text = "Hello",
+                text = "Hola",
                 style = MaterialTheme.typography.bodyLarge,
                 color = Color.Gray
             )
@@ -350,13 +350,13 @@ fun QuickAccessButtons() {
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
         Button(onClick = { /* Acción 1 */ }) {
-            Text("Action 1")
+            Text("Recargar")
         }
         Button(onClick = { /* Acción 2 */ }) {
-            Text("Action 2")
+            Text("Canjear")
         }
         Button(onClick = { /* Acción 3 */ }) {
-            Text("Action 3")
+            Text("Camára")
         }
     }
 }
@@ -365,7 +365,7 @@ fun QuickAccessButtons() {
 fun SearchBar() {
     Box(modifier = Modifier.padding(16.dp)) {
         BasicTextField(
-            value = TextFieldValue("Search..."),
+            value = TextFieldValue("Busqueda..."),
             onValueChange = {},
             modifier = Modifier
                 .fillMaxWidth()
@@ -393,7 +393,7 @@ fun UpgradeBanner() {
             .background(Color(0xFFFFEB3B))
             .padding(16.dp)
     ) {
-        Text(text = "Upgrade your account for premium features!", color = Color.Black)
+        Text(text = "Agrega tu tarjeta Aqui!!", color = Color.Black)
     }
 }
 
@@ -401,14 +401,14 @@ fun UpgradeBanner() {
 fun GridButtons() {
     Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
         val gridItems = listOf(
-            Pair(R.drawable.ic_1, "Inbox"),
-            Pair(R.drawable.ic_2, "Maps"),
+            Pair(R.drawable.ic_1, "Formularios"),
+            Pair(R.drawable.ic_2, "Mapas"),
             Pair(R.drawable.ic_3, "Chats"),
-            Pair(R.drawable.ic_4, "Report"),
-            Pair(R.drawable.ic_5, "Calendar"),
+            Pair(R.drawable.ic_4, "Reportes"),
+            Pair(R.drawable.ic_5, "Cumpleaños"),
             Pair(R.drawable.ic_6, "Tips"),
-            Pair(R.drawable.ic_7, "Settings"),
-            Pair(R.drawable.ic_8, "More")
+            Pair(R.drawable.ic_7, "Configuración"),
+            Pair(R.drawable.ic_8, "Otros")
         )
 
         // Crear filas para los íconos
@@ -464,7 +464,7 @@ fun SettingsScreen() {
             ) {
                 // Encabezado de ajustes
                 Text(
-                    text = "Settings",
+                    text = "Configuración",
                     style = MaterialTheme.typography.titleLarge,
                     color = Color(0xFFFF5722) // Color naranja
                 )
@@ -472,17 +472,17 @@ fun SettingsScreen() {
                 Spacer(modifier = Modifier.height(20.dp))
 
                 // Opción de notificaciones
-                SettingItem(title = "Enable Notifications", defaultChecked = true)
+                SettingItem(title = "Activar Notficaciones", defaultChecked = true)
 
                 Spacer(modifier = Modifier.height(20.dp))
 
                 // Opción de modo oscuro
-                SettingItem(title = "Dark Mode", defaultChecked = false)
+                SettingItem(title = "Modo Oscuro", defaultChecked = false)
 
                 Spacer(modifier = Modifier.height(20.dp))
 
                 // Opción de sonido
-                SettingItem(title = "Enable Sound", defaultChecked = true)
+                SettingItem(title = "Habilitar Sonido", defaultChecked = true)
             }
 
             // Botón de regresar en la parte inferior derecha
@@ -493,7 +493,7 @@ fun SettingsScreen() {
                     .align(Alignment.BottomEnd) // Alinea el botón en la parte inferior derecha
                     .padding(16.dp)
             ) {
-                Text(text = "Back", color = Color.Black)
+                Text(text = "Atrás", color = Color.Black)
             }
         }
     }
@@ -546,7 +546,7 @@ fun InboxScreen() {
             ) {
                 // Encabezado del Inbox
                 Text(
-                    text = "Inbox",
+                    text = "Chat",
                     style = MaterialTheme.typography.titleLarge,
                     color = Color(0xFFFF5722),
                     modifier = Modifier
@@ -676,7 +676,7 @@ fun ReportScreen() {
             ) {
                 // Título de la pantalla de reportes
                 Text(
-                    text = "Reports",
+                    text = "Reportes",
                     style = MaterialTheme.typography.titleLarge,
                     color = Color(0xFFFF5722)
                 )
@@ -695,14 +695,14 @@ fun ReportScreen() {
                 // Gráfico de barras simulado
                 BarChart(
                     data = listOf(120, 150, 100, 200, 180, 220, 300),
-                    labels = listOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+                    labels = listOf("L", "M", "X", "J", "V", "S", "D")
                 )
 
                 Spacer(modifier = Modifier.height(20.dp))
 
                 // Otro ejemplo de gráfico o estadísticas (puedes agregar más si lo necesitas)
                 Text(
-                    text = "Average visitors per day: 180",
+                    text = "Promedio de visitantes por día: 180",
                     style = MaterialTheme.typography.bodyLarge,
                     color = Color.Black
                 )
@@ -716,7 +716,7 @@ fun ReportScreen() {
                     .align(Alignment.BottomEnd) // Alinea el botón en la parte inferior derecha
                     .padding(16.dp)
             ) {
-                Text(text = "Back", color = Color.Black)
+                Text(text = "Atrás", color = Color.Black)
             }
         }
     }
@@ -842,7 +842,7 @@ fun TipsScreen() {
                     .align(Alignment.BottomEnd) // Alinea el botón en la parte inferior derecha
                     .padding(16.dp)
             ) {
-                Text(text = "Back", color = Color.Black)
+                Text(text = "Atrás", color = Color.Black)
             }
         }
     }
@@ -900,7 +900,7 @@ fun CalendarScreen() {
             ) {
                 // Título de la pantalla del calendario
                 Text(
-                    text = "Calendar",
+                    text = "Calendario",
                     style = MaterialTheme.typography.titleLarge,
                     color = Color(0xFFFF5722)
                 )
@@ -912,7 +912,7 @@ fun CalendarScreen() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    listOf("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat").forEach { day ->
+                    listOf("Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom").forEach { day ->
                         Text(
                             text = day,
                             style = MaterialTheme.typography.bodyLarge,
@@ -956,7 +956,7 @@ fun CalendarScreen() {
                     .align(Alignment.BottomEnd)
                     .padding(16.dp)
             ) {
-                Text(text = "Back", color = Color.Black)
+                Text(text = "Atrás", color = Color.Black)
             }
         }
     }
@@ -1027,7 +1027,7 @@ fun MapScreen() {
                     .align(Alignment.BottomEnd)
                     .padding(16.dp)
             ) {
-                Text(text = "Back", color = Color.Black)
+                Text(text = "Atrás", color = Color.Black)
             }
         }
     }
