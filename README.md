@@ -1,1 +1,1 @@
-jorell teamo
+jorell ya no teamo
